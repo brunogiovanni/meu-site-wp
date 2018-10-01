@@ -1,0 +1,25 @@
+/*
+Theme Name: BGBO
+Theme URI: http://bgbo.com.br
+Description: Site pessoal
+Author: Bruno Giovanni
+Author URI: http://bgbo.com.br
+Version: 1.0
+*/
+
+.header {
+	height: 15rem;
+	background: url(assets/images/header-bg.jpg) left center no-repeat;
+	background-attachment: scroll;
+	background-size: 100%;
+}
+
+.header h1 {
+	color: #fff;
+}
+.header h4 {
+	color: #ccc;
+}
+.header-title {
+	padding: 8rem 0 0 3rem;
+}
