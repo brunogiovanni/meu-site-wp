@@ -1,6 +1,6 @@
 /*
 Theme Name: BGBO
-Theme URI: http://bgbo.com.br
+Theme URI: https://github.com/brunogiovanni/meu-site
 Description: Site pessoal
 Author: Bruno Giovanni
 Author URI: http://bgbo.com.br
@@ -20,6 +20,14 @@ Version: 1.0
 .header h4 {
 	color: #ccc;
 }
-.header-title {
-	padding: 8rem 0 0 3rem;
+
+.header-title .col-sm-2 {
+	padding: 3rem 0;
+}
+.header-title .col-sm-10 {
+	padding: 8rem 0;
+}
+
+.card-img-top {
+	height: 15rem;
 }
