@@ -6,7 +6,8 @@ if ( ! function_exists( 'bgbo_setup' ) ) :
 	 *
 	 * @since BGBO 0.1
 	 */
-	function bgbo_setup() {
+	function bgbo_setup()
+	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/bgbo
@@ -98,6 +99,17 @@ if ( ! function_exists( 'bgbo_setup' ) ) :
 
 		// Indicate widget sidebars can use selective refresh in the Customizer.
 		add_theme_support( 'customize-selective-refresh-widgets' );
+	}
+
+	/**
+	 * Listar categorias cadastradas
+	 *
+	 * @return object Categorias
+	 */
+	function listarCategorias()
+	{
+		$args = ['orderby' => 'parent', 'order' => 'asc', 'hide_empty' => false, 'echo' => false];
+		return get_categories($args);
 	}
 endif;
 add_action( 'after_setup_theme', 'bgbo_setup' );

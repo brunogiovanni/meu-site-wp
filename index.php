@@ -26,12 +26,20 @@
 
 <!-- blog -->
 <div class="container">
-	<!-- <a href="<?php echo site_url(); ?>/blog"><h2>Blog</h2></a> -->
-	<h2>Blog</h2>
+	<div class="row">
+		<div class="col-sm-10">
+			<h2>Últimas postagens</h2>
+		</div>
+		<!-- <div class="col-sm-2 text-right">
+			<a href="<?php echo site_url(); ?>/posts" class="btn btn-info">
+				Mais postagens
+			</a>
+		</div> -->
+	</div>
 
 	<div class="row">
 		<?php
-		$args = array('post_type' => 'post', 'showposts' => 9);
+		$args = array('post_type' => 'post', 'showposts' => 3);
 		$my_posts = get_posts($args);
 		if ($my_posts) :
 			foreach ($my_posts as $post) :
