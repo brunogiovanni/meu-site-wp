@@ -15,10 +15,10 @@ Version: 1.0
 }
 
 .header h1 {
-	color: #fff;
+	color: #000;
 }
 .header h4 {
-	color: #ccc;
+	color: #444;
 }
 
 .header-title .col-sm-2 {
