@@ -25,27 +25,26 @@
 </div>
 
 <!-- blog -->
-<div class="container">
-	<div class="row">
-		<div class="col-sm-10">
-			<h2>Últimas postagens</h2>
+<?php
+$args = array('post_type' => 'post', 'showposts' => 3);
+$my_posts = get_posts($args);
+if ($my_posts) : ?>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10">
+				<h2>Últimas postagens</h2>
+			</div>
+			<!-- <div class="col-sm-2 text-right">
+				<a href="<?php echo site_url(); ?>/posts" class="btn btn-info">
+					Mais postagens
+				</a>
+			</div> -->
 		</div>
-		<!-- <div class="col-sm-2 text-right">
-			<a href="<?php echo site_url(); ?>/posts" class="btn btn-info">
-				Mais postagens
-			</a>
-		</div> -->
-	</div>
-
-	<div class="row">
-		<?php
-		$args = array('post_type' => 'post', 'showposts' => 3);
-		$my_posts = get_posts($args);
-		if ($my_posts) :
+		<div class="row">
+			<?php
 			foreach ($my_posts as $post) :
 				setup_postdata($post);
 				?>
-				
 				<div class="col">
 					<div class="card">
 						<img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid card-img-top" alt="">
@@ -60,13 +59,10 @@
 						</div>
 					</div>
 				</div>
-
-				<?php
-			endforeach;
-		endif;
-		?>
+			<?php endforeach; ?>
+		</div>
 	</div>
-</div>
+<?php endif; ?>
 
 <br>
 
