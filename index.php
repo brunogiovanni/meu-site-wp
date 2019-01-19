@@ -45,7 +45,7 @@ if ($my_posts) : ?>
 			foreach ($my_posts as $post) :
 				setup_postdata($post);
 				?>
-				<div class="col">
+				<div class="col-sm-4">
 					<div class="card">
 						<img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid card-img-top" alt="">
 						<div class="card-body">

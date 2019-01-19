@@ -61,6 +61,9 @@
 				        </div>
 				    </li>
 		      		<li class="nav-item">
+		        		<a class="nav-link" href="<?php echo site_url(); ?>/portfolio">Portfólio</a>
+		      		</li>
+		      		<li class="nav-item">
 		        		<a class="nav-link" href="<?php echo site_url(); ?>/contato">Contato</a>
 		      		</li>
 		    	</ul>

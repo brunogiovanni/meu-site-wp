@@ -1,13 +1,18 @@
 <?php get_header(); ?>
 
 <div class="container">
-	<h1>Blog</h1>
+	<h1>
+		<?php
+		$category = get_the_category();
+		echo $category[0]->name;
+		?>
+	</h1>
 	<hr>
 	<?php if (have_posts()) : ?>
 		<div class="row">
 			<?php while (have_posts()) : the_post(); ?>
 				
-				<div class="col">
+				<div class="col-sm-4">
 					<div class="card">
 						<img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid card-img-top" alt="">
 						<div class="card-body">
