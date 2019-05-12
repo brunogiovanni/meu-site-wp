@@ -24,6 +24,42 @@
 	</div>
 </div>
 
+<!-- servicos -->
+<?php
+$args = array('post_type' => 'jetpack-portfolio', 'showposts' => 2, 'category_name' => 'Serviços');
+$my_posts = get_posts($args);
+if ($my_posts) : ?>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10">
+				<h2>Serviços</h2>
+			</div>
+		</div>
+		<div class="row">
+			<?php
+			foreach ($my_posts as $post) :
+				setup_postdata($post);
+				?>
+				<div class="col-sm-6">
+					<div class="card">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid card-img-top" alt="">
+						<div class="card-body">
+							<h5 class="card-title">
+								<?php the_title(); ?>
+							</h5>
+							<p class="card-text">
+								<?php the_excerpt(); ?>
+							</p>
+							<a href="<?php the_permalink(); ?>" class="btn btn-primary">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+<?php endif; ?>
+<br />
+
 <!-- blog -->
 <?php
 $args = array('post_type' => 'post', 'showposts' => 3);

@@ -4,11 +4,23 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/stickyfooter.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" lazyload>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" lazyload>
+	<link rel="stylesheet" type="text/css" lazyload href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" type="text/css" lazyload href="<?php bloginfo('template_directory'); ?>/assets/css/stickyfooter.css">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32125697-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'UA-32125697-2');
+	</script> -->
+	<!-- adsense -->
+	<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+	
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -61,7 +73,10 @@
 				        </div>
 				    </li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="<?php echo site_url(); ?>/portfolio">Portfólio</a>
+		        		<a class="nav-link" href="<?php echo site_url(); ?>/projetos">Portfólio</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="<?php echo site_url(); ?>/servicos">Serviços</a>
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link" href="<?php echo site_url(); ?>/contato">Contato</a>
@@ -76,3 +91,12 @@
 		  	</div>
 	  	</div>
 	</nav>
+	<div class="container">
+		<!-- pagina -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-3950808646360342"
+			 data-ad-slot="3507577938"
+			 data-ad-format="auto"
+			 data-full-width-responsive="true"></ins>
+	</div>
