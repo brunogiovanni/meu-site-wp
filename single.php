@@ -11,10 +11,6 @@
 		</div>
 		<div class="col-2">
 			<!-- inpost-big -->
-			<ins class="adsbygoogle"
-			     style="display:inline-block;width:160px;height:600px"
-			     data-ad-client="ca-pub-3950808646360342"
-			     data-ad-slot="3894213445"></ins>
 		</div>
 	</div>
 </div>
