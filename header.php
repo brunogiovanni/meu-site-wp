@@ -1,41 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" lazyload>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" lazyload>
-	<link rel="stylesheet" type="text/css" lazyload href="<?php bloginfo('stylesheet_url'); ?>">
-	<link rel="stylesheet" type="text/css" lazyload href="<?php bloginfo('template_directory'); ?>/assets/css/stickyfooter.css">
+
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/stickyfooter.css">
+	
 	<?php wp_head(); ?>
 </head>
 <body>
-	<!-- cabecalho -->
-	<div class="row-fluid d-none d-sm-block">
-		<div class="header">
-			<div class="header-title container">
-				<div class="row">
-					<div class="col-sm-2">
-						<a href="<?php echo site_url(); ?>">
-							<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" alt="logo" title="Bruno Giovanni - Desenvolvedor" class="img-fluid">
-						</a>
-					</div>
-					<div class="col-sm-10">
-						<h1>
-							Bruno Giovanni
-						</h1>
-						<h4>Desenvolvedor</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php wp_body_open(); ?>
 
 	<!-- menu -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand d-xl-none d-lg-none d-md-none d-sm-none" href="<?php echo site_url(); ?>">BG</a>
+			<a class="navbar-brand" href="<?php echo site_url(); ?>">
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" alt="logo" title="Bruno Giovanni - Desenvolvedor" class="img-fluid" width="60">
+			</a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
@@ -78,3 +64,4 @@
 		  	</div>
 	  	</div>
 	</nav>
+	

@@ -1,18 +1,6 @@
-<?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<?php get_template_part( 'parts/header', 'page' ); ?>
 
-get_header(); ?>
-
-<div class="container">
+<div class="container corpo">
 	<h1>
 		<?php printf('Resultados para: %s', '<span>' . get_search_query() . '</span>' ); ?>
 	</h1>

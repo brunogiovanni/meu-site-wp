@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part( 'parts/header', 'page' ); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php $titulo = the_title('', '', false); ?>
@@ -8,7 +8,7 @@
 		break;
 		?>
 	<?php else : ?>
-		<div class="container">
+		<div class="container corpo">
 			<h1><?php echo $titulo; ?></h1>
 			<hr>
 			<?php the_content(); ?>
